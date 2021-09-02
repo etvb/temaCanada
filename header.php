@@ -17,7 +17,11 @@
             <a href="<?php echo esc_url(home_url('/'));?>">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="logo toronto">
             </a>
-            <!-- <h2 class="site-description"><?php bloginfo('description'); ?></h2> -->
+
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <?php wp_nav_menu( array('theme_location' => 'menu_principal')); ?>
+
+            </nav>
         </div>
     </header>
     <div id="contenido" class="container">
