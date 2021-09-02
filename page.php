@@ -1,7 +1,4 @@
-<?php
-    get_header();
-    echo "desde PAGE.php";
-?>
+<?php get_header(); ?>
 
 <?php while( have_posts() ) : the_post()?>
 <br>
