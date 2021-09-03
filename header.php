@@ -14,14 +14,15 @@
 
     <header id="masthead" class="site-header" role="banner">
         <div class="container">
-            <a href="<?php echo esc_url(home_url('/'));?>">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="logo toronto">
-            </a>
-
+            <div class="logo">
+                <a href="<?php echo esc_url(home_url('/'));?>">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="logo toronto">
+                </a>
+            </div>
             <nav id="site-navigation" class="main-navigation" role="navigation">
                 <?php wp_nav_menu( array('theme_location' => 'menu_principal')); ?>
-
             </nav>
+            <div class="clear"></div>
         </div>
     </header>
     <div id="contenido" class="container">
