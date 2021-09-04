@@ -14,6 +14,7 @@
         //culquier nombre => (como se vera en el apartado de menus,"Dónde se verá", nombre del tem)
         'menu_principal' => __('Menu Principal', 'Tema-canada')
     ));
+    
 
     add_filter('show_admin_bar','__return_false');
 
