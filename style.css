@@ -23,6 +23,42 @@ html {
 .clear {
     clear: both;
 }
+#contenido {
+    margin-top: 20px;
+}
+
+#primary {
+    float: left;
+    width: 720px;
+}
+
+.destacada {
+    position: relative;
+}
+
+.destacada h2 {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background-color: #a00622;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+h2.noimagen {
+    color: #a00622;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #a00622; 
+
+}
+#secondary {
+    float: right;
+    width: 370px;
+    margin-left: 10px;
+}
 
 header {
     background-color: #a00622;
