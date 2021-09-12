@@ -45,6 +45,10 @@ html {
     color: #ffffff;
 }
 
+.current_page_item {
+    border-bottom: 1px solid white;
+}
+
 h2.noimagen {
     color: #a00622;
     font-size: 30px;
@@ -72,7 +76,7 @@ header .logo {
 header nav {
     float: right;
     margin-top: 30px;
-    width: 500px;
+    width: 400px;
 }
 
 header nav ul {
