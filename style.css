@@ -76,7 +76,7 @@ header .logo {
 header nav {
     float: right;
     margin-top: 30px;
-    width: 400px;
+    width: 450px;
 }
 
 header nav ul {
@@ -97,6 +97,36 @@ header nav ul li a {
     width: 1100px;
     margin: 0 auto;
 }
+
+/* SIDEBAR */
+
+figure.wp-block-pullquote {
+    padding: 0;
+}
+
+#testimonial h3{
+color: #a00622;
+}
+
+#testimonial blockquote p{
+    color: #767676;
+    font-size: 20px;
+    line-height: 34pxs;
+    background-image: url(img/svg_comilla.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 86px;
+    font-style: italic;
+    text-align: left;
+}
+
+#testimonial blockquote cite{
+    text-align: right;
+    display: block;
+    font-style: normal;
+
+}
+
 
 footer nav {
     /* float: left; */
