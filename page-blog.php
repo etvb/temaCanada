@@ -20,7 +20,20 @@ get_header(); ?>
 <div id="primary" class="primary">
 
 
-    <p>Desde la pagina del blog</p>
+    <?php $args = array(
+        'cat' => array(3,1),
+        'post_per_pade' => 6,
+        'orderby' => 'date',
+        'order' => 'DESC',
+    ); ?>
+    
+    <?php $guiaToronto = new WP_Query($args) ?>
+    <?php while($guiaToronto->have_posts() ): $guiaToronto->the_post();?>
+
+    <pre>
+        <?php var_dump($guiaToronto); ?>
+    </pre>
+    <?php endwhile; wp_reset_postdata(); ?>
 </div>
 
 <?php endwhile;?>
