@@ -18,6 +18,8 @@
     // agregar una imagen destaca
     add_theme_support ('post-thumbnails');
     add_image_size('destacada', 1100, 418, true);
+    add_image_size('guia-toronto', 350, 210, true);
+
 
     //mostrar los widgets en el backen
     function theme_widgets() {

@@ -30,9 +30,15 @@ get_header(); ?>
     <?php $guiaToronto = new WP_Query($args) ?>
     <?php while($guiaToronto->have_posts() ): $guiaToronto->the_post();?>
 
-    <pre>
-        <?php var_dump($guiaToronto); ?>
-    </pre>
+    <div class="post-guia">
+        <div class="imagen">
+            <?php the_post_thumbnail('guia-toronto'); ?>
+        </div>
+        <div class="contenido">
+
+        </div>
+    </div>
+
     <?php endwhile; wp_reset_postdata(); ?>
 </div>
 
