@@ -32,10 +32,20 @@ get_header(); ?>
 
     <div class="post-guia">
         <div class="imagen">
-            <?php the_post_thumbnail('guia-toronto'); ?>
+            <a href="<?php the_permalink(); ?>">
+                <?php the_post_thumbnail('guia-toronto'); ?>
+            </a>
+        </div>
+        <div class="categoria">
+            <?php the_category(); ?>
         </div>
         <div class="contenido">
-
+            <h3> <?php the_title(); ?> </h3>
+            <?php the_excerpt(); ?>
+        </div>
+        <div class="info-post">
+            <p class="autor">Por: <?php the_author(); ?></p>
+            <p class="fecha"> <?php the_date(); ?></p>
         </div>
     </div>
 
